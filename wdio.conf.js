@@ -26,8 +26,10 @@ const path = require ('path');
     // of the config file unless it's absolute.
     //
     specs: [
-        './features/**/edit-account.feature',
-        './features/**/login.feature'
+        [
+            './features/**/edit-account.feature',
+            './features/**/login.feature'
+        ]
     ],
     // Patterns to exclude.
     exclude: [
