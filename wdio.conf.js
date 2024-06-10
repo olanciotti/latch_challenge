@@ -27,8 +27,8 @@ const path = require ('path');
     //
     specs: [
         [
-            './features/**/edit-account.feature',
-            './features/**/login.feature'
+            "./features/edit-account.feature",
+            "./features/login.feature"
         ]
     ],
     // Patterns to exclude.

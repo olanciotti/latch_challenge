@@ -7,5 +7,5 @@ Feature: The James Rider Android App Edit Account section
     And I see the title Welcome "James"!
     And I click to see my profile
     And I see the text "Profile"
-    And I fill "John" as first name and "Smith" as last name
-    Then I validate that my profile name is "John" "Smith"
+    And I fill "John" as first name and "Smithh" as last name
+    Then I validate that my profile name is "John" "Smithh"
