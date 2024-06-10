@@ -25,10 +25,12 @@ const path = require ('path');
     // The path of the spec files will be resolved relative from the directory of
     // of the config file unless it's absolute.
     //
-    specs: [
+    "specs": [
+        [
+            "./features/login.feature",
+        ],
         [
             "./features/edit-account.feature",
-            "./features/login.feature"
         ]
     ],
     // Patterns to exclude.
@@ -249,18 +251,18 @@ const path = require ('path');
      * @param {string}                   uri      path to feature file
      * @param {GherkinDocument.IFeature} feature  Cucumber feature object
      */
-     beforeFeature: function (uri, feature) {
-        driver.installApp('/Users/ornella/Documents/personal/latch_challenge/android/James Rider_1.22.0.apk');
-        driver.activateApp('com.hdw.james.rider');
-    },
+    //beforeFeature: function (uri, feature) {
+    //    driver.installApp('/Users/ornella/Documents/personal/latch_challenge/android/James Rider_1.22.0.apk');
+    //    driver.activateApp('com.hdw.james.rider');
+    //},
     /**
      *
      * Runs before a Cucumber Scenario.
      * @param {ITestCaseHookParameter} world    world object containing information on pickle and test step
      * @param {object}                 context  Cucumber World object
      */
-     // beforeScenario: function (world, context) {
-    // },
+    // beforeScenario: function (world, context) {
+    //},
     /**
      *
      * Runs before a Cucumber Step.
@@ -293,7 +295,7 @@ const path = require ('path');
      * @param {number}                 result.duration  duration of scenario in milliseconds
      * @param {object}                 context          Cucumber World object
      */
-    // afterScenario: function (world, result, context) {
+    // afterScenario: function (world, result, context) { 
     // },
     /**
      *
@@ -301,7 +303,7 @@ const path = require ('path');
      * @param {string}                   uri      path to feature file
      * @param {GherkinDocument.IFeature} feature  Cucumber feature object
      */
-     afterFeature: function (uri, feature) {
+    afterFeature: function (uri, feature) {
         driver.removeApp('com.hdw.james.rider');
     },
     
